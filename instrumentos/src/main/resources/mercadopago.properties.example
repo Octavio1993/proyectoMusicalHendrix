@@ -1,0 +1,13 @@
+# Credenciales de Mercado Pago
+mercadopago.access.token=REEMPLAZA_CON_TUS_CREDENCIALES
+
+# Configuración para modo sandbox
+mercadopago.sandbox.mode=true
+
+# URLs de retorno (ajusta al puerto de tu frontend)
+mercadopago.success.url=http://localhost:5173/payment/redirect?status=approved
+mercadopago.failure.url=http://localhost:5173/payment/redirect?status=rejected
+mercadopago.pending.url=http://localhost:5173/payment/redirect?status=pending
+
+# URL para notificaciones (webhook)
+mercadopago.notification.url=http://localhost:8080/api/pagos/webhook

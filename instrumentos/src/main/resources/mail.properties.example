@@ -1,0 +1,3 @@
+mail.from.email=TU_MAIL
+mail.from.name=NOMBRE_DEL_LOCAL
+mail.base.url=http://localhost:5173

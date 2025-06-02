@@ -1,0 +1,110 @@
+.payment-status-page {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.status-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.payment-status-page.success .status-icon {
+    color: #2a9d8f;
+}
+
+.payment-status-page.failure .status-icon {
+    color: #e63946;
+}
+
+.payment-status-page.pending .status-icon {
+    color: #e9c46a;
+}
+
+.payment-status-page h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.payment-details {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.payment-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #228a7d;
+}
+
+.btn-secondary {
+    background-color: #e5e5e5;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #d1d1d1;
+}
+
+.retry-payment-container {
+    margin-top: 2rem;
+}
+
+/* Nuevos estilos para la cuenta regresiva */
+.redirect-countdown {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.redirect-countdown p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.redirect-countdown strong {
+    font-size: 1.25rem;
+    color: #212529;
+}
+
+/* Animación para el icono de estado */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

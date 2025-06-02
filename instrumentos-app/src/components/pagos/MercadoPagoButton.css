@@ -1,0 +1,103 @@
+.mercadopago-button-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iniciar-pago-btn {
+  background-color: #009ee3;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.iniciar-pago-btn:hover {
+  background-color: #008dcd;
+}
+
+.iniciar-pago-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.mercadopago-button-container {
+  width: 100%;
+  max-width: 300px;
+}
+
+.payment-error {
+  margin-top: 0.75rem;
+  color: #e63946;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.retry-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.retry-btn:hover {
+  background-color: #e9ecef;
+}
+
+/* Estilos para la redirección */
+.redirect-message {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(0, 158, 227, 0.3);
+  border-radius: 50%;
+  border-top-color: #009ee3;
+  animation: spin 1s linear infinite;
+  margin: 1rem 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.redirect-btn {
+  background-color: #009ee3;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.redirect-btn:hover {
+  background-color: #008dcd;
+}
